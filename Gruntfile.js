@@ -352,7 +352,7 @@ module.exports = function (grunt) {
       source: {
         options: {
           remote: 'git@github.com:katrinsharp/fargifts-boutique.git',
-          branch: 'gh-pages'
+          branch: 'develop'
         }
       },
       heroku: {
