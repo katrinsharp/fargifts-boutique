@@ -367,6 +367,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
+          dir: 'dist',
           remote: 'git@heroku.com:fargifts-boutique.git',
           branch: 'master',
           tag: pkg.version
