@@ -349,10 +349,10 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      source: {
+      pages: {
         options: {
           remote: 'git@github.com:katrinsharp/fargifts-boutique.git',
-          branch: 'develop'
+          branch: 'gh-pages'
         }
       },
       heroku: {
