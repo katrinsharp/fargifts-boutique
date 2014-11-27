@@ -457,6 +457,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.registerTask('heroku:production', ['bower','build']);
-
 };
