@@ -352,9 +352,9 @@ module.exports = function (grunt) {
       }
     },
 
-    buildcontrol: {
+    /*buildcontrol: {
       options: {
-        //dir: 'dist',
+        dir: 'dist',
         commit: true,
         push: true,
         connectCommits: false,
@@ -379,7 +379,7 @@ module.exports = function (grunt) {
           branch: 'build'
         }
       }
-    },
+    },*/
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
