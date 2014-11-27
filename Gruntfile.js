@@ -354,14 +354,14 @@ module.exports = function (grunt) {
 
     buildcontrol: {
       options: {
+        //dir: 'dist',
         commit: true,
         push: true,
         connectCommits: false,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
       pages: {
-        options: {
-          dir: 'dist', 
+        options: { 
           remote: 'git@github.com:katrinsharp/fargifts-boutique.git',
           branch: 'gh-pages'
         }
