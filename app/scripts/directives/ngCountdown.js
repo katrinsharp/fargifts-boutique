@@ -6,7 +6,7 @@
 
     angular.module('ngCountdown', [])
 
-    .directive('ngBackstretch', [
+    .directive('ngCountdown', [
 
         function() {
 
@@ -17,14 +17,10 @@
                 restrict: 'A',
                 link: function(scope, element, attr) {
 
-                    //if (attr.ngCountdown === '' || typeof attr.ngCountdown === 'undefined')
-                    //    throw new Error('ngCountdown | You have not declared count to.')
+                    if (attr.ngCountdown === '' || typeof attr.ngCountdown === 'undefined')
+                        throw new Error('ngCountdown | You have not declared count to.')
 
-                    /*
-                    Countdown initializer
-                    */
-                    var now = new Date();
-                    var countTo = 25 * 24 * 60 * 60 * 1000 + now.valueOf();
+                    var countTo = new Date(attr.ngCountdown);
                     $(element).countdown(countTo, function(event) {
                         var $this = $(this);
                         switch(event.type) {
