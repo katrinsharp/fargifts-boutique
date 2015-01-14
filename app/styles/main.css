@@ -88,6 +88,10 @@ a:hover { text-decoration: none; }
     text-shadow: 0 1px 7px rgba(0,0,0,.2);
 }
 
+.coming-soon p.no-margin-top {
+    margin-top: -20px !important;
+}
+
 .timer {
     margin-top: 40px;
     text-shadow: 0 1px 5px rgba(0,0,0,.1);
@@ -132,6 +136,10 @@ a:hover { text-decoration: none; }
 .subscribe {
     margin-top: 30px;
     text-align: center;
+}
+
+.subscribe.border-top {
+    border-top: 2px solid #e75967;
 }
 
 .subscribe h3 {
@@ -182,7 +190,7 @@ a:hover { text-decoration: none; }
 .subscribe form input:-ms-input-placeholder { color: #888; }
 .subscribe form input::-webkit-input-placeholder { color: #888; }
 
-.subscribe form button {
+/*.subscribe form*/ button {
     width: 130px;
     height: 46px;
     margin: 0;
@@ -193,7 +201,7 @@ a:hover { text-decoration: none; }
     font-size: 18px;
     line-height: 46px;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -207,22 +215,27 @@ a:hover { text-decoration: none; }
     -ms-transition: all .3s;
 }
 
-.subscribe form button:hover {
+/*.subscribe form*/ button:hover {
     background: #e75967;
     color: #fff;
 }
 
-.subscribe form button:active {
+/*.subscribe form*/ button:active {
     background: #e75967;
     color: #fff;
 }
 
-.success-message, .error-message {
+.success-msg, .error-msg {
     font-size: 18px;
+    margin-top: 10px;
 }
 
-.error-message {
+.error-msg {
     color: #e75967;
+}
+
+.not-visible {
+    visibility: hidden;
 }
 
 .social {
@@ -366,7 +379,7 @@ a:hover { text-decoration: none; }
         width: 90%;
     }
 
-    .subscribe form button {
+    /*.subscribe form*/ button {
         width: 90%;
         margin-top: 10px;
     }

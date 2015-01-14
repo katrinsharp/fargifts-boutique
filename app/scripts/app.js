@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngBackstretch',
-    'ngCountdown'
+    'ngCountdown',
+    'ngResultmessage'
   ])
   .config(function ($routeProvider) {
     $routeProvider

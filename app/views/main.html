@@ -5,7 +5,14 @@
               <h1><a href="#">Fargifts</a><!--span>.</span--></h1>
             </div>
             <div class="call-us col-sm-8">
-              <p>Tel: <span>647 773 0346</span> | Email: <span>social at fargifts.com</span></p>
+              <p>
+                Tel: <span>647 773 0346</span> | Email: <span>social at fargifts.com</span>
+                <span>
+                  <a href="#artisan" target="_self">
+                    <button type="submit" class="btn2">For artisans</button>
+                  </a>
+              </span>
+              </p>
             </div>
           </div>
         </div>
@@ -16,9 +23,12 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                  <h2>Unique corporate gifts are coming to town</h2>
-                  <p>Natural, organic, handmade, local, with your brand on it. Need we say more?</p>
-                  <div class="timer" ng-countdown="2015/01/15">
+                  <h2>Eco awesome wedding and party favors</h2>
+                  <!--h1>are coming to town</h1-->
+                  <h1>Natural, organic, locally handmade</h1> 
+                  <!--p class="no-margin-top">made to order for your special event.</p--> 
+                  <p>Need we say more?</p>
+                  <div class="timer" ng-countdown="2015/02/20">
                     <div class="days-wrapper">
                       <span class="days"></span> <br>days
                     </div>
@@ -43,17 +53,16 @@
           <div class="row">
             <div class="col-md-12 subscribe">
               <h3>Be the first to know when we launch</h3>
-              <p>Early birds will always have a special place ( and price) in our heart. Promise!</p>
-              <form class="form-inline" ng-submit="submitSignup()">
+              <p>Early birds will always have a special place (and price) in our heart. Promise!</p>
+              <form class="form-inline" ng-submit="submitSignup('customer')">
                 
                 <!--input type="text" name="email" ng-model="email" placeholder="Enter your email..."-->
 
-                <input type="email" name="input" ng-model="email"  placeholder="Enter your email..." required>
+                <input type="email" name="email-customer" ng-model="email_customer" placeholder="Enter your email..." required>
 
                 <button type="submit" class="btn2">Sign up</button>
               </form>
-              <div class="success-message"></div>
-              <div class="error-message"></div>
+              <div class="success-msg not-visible" result="result" ng-resultMessage="customer">x</div>
             </div>
           </div>
           <div class="row">
@@ -64,6 +73,19 @@
               <!--a href="" class="googleplus" rel="tooltip" data-placement="top" data-original-title="Google Plus"></a-->
               <a href="https://pinterest.com/fargifts" target="_blank"  class="pinterest" rel="tooltip" data-placement="top" data-original-title="Pinterest"></a>
               <!--a href="" class="flickr" rel="tooltip" data-placement="top" data-original-title="Flickr"></a-->
+            </div>
+          </div>
+          <div class="row" id="artisan">
+            <div class="col-md-12 subscribe border-top">
+              <h3>Are you eco Artisan?</h3>
+              <p>We're eager to hear from you!</p>
+              <form class="form-inline" ng-submit="submitSignup('artisan')">
+                
+                <input type="email" name="email-artisan" ng-model="email_artisan"  placeholder="Enter your email..." required>
+
+                <button type="submit" class="btn2">Email me</button>
+              </form>
+              <div class="success-msg not-visible" result="result" ng-resultMessage="artisan">x</div>
             </div>
           </div>
         </div>

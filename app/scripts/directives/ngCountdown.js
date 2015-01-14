@@ -1,6 +1,6 @@
 (function() {
 
-    /* Start ngBackstretch */
+    /* Start ngCountdown */
 
     'use strict';
 
